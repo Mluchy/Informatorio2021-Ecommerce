@@ -51,5 +51,5 @@ public class UsuarioController {
     public void personaDelete(@PathVariable("id") Long id) {
         usuarioRepository.deleteById(id);
     }
-    
+
 }
