@@ -45,6 +45,11 @@ public class UsuarioController {
         return usuarioRepository.saveAll(usuario);
     }
 
-
-
+    //DELETE de un usuario por id
+    @DeleteMapping(value = "/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void personaDelete(@PathVariable("id") Long id) {
+        usuarioRepository.deleteById(id);
+    }
+    
 }
